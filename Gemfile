@@ -5,8 +5,11 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 
+require 'rake/dsl_definition'
+gem 'rake'
+gem 'sqlite3'
+gem 'bootstrap-sass'
 
 
 # Gems used only for assets and not required
@@ -21,7 +24,7 @@ gem 'jquery-rails'
 gem 'etherpad-lite'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
@@ -43,6 +46,6 @@ group :test do
   # Pretty printed test output
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
-  gem 'spork', '0.9.0.rc8'
+  gem 'spork', '0.9.1'
   gem 'factory_girl_rails', '1.0'
 end
