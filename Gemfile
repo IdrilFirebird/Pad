@@ -10,6 +10,8 @@ require 'rake/dsl_definition'
 gem 'rake'
 gem 'sqlite3'
 gem 'bootstrap-sass'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.5'
 
 
 # Gems used only for assets and not required
